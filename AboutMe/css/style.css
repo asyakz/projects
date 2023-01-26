@@ -174,7 +174,7 @@ td {
 }
 
 .my-time {
-  background-image: url(/img/drawing.png);
+  background-image: url('/img/drawing.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
