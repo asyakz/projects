@@ -88,8 +88,6 @@ td {
 .title {
   text-align: center;
   font-size: 32px;
-  /* margin-bottom: 25px;
-  margin-top: 25px; */
   transition: color .5s ease;
 }
 
@@ -149,7 +147,7 @@ td {
 
 .data-right {
   max-width: 800px;
-  background-image: url('/img/dream-catcher.png');
+  background-image: url('./img/dream-catcher.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right top;
@@ -174,7 +172,7 @@ td {
 }
 
 .my-time {
-  background-image: url('/img/drawing.png');
+  background-image: url('./img/drawing.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -221,31 +219,31 @@ td {
 }
 
 .slide-1 {
-  background-image: url('/img/1.jpg');
+  background-image: url('./img/1.jpg');
 }
 
 .slide-2 {
-  background-image: url('/img/2.jpg');
+  background-image: url('./img/2.jpg');
 }
 
 .slide-3 {
-  background-image: url('/img/3.jpg');
+  background-image: url('./img/3.jpg');
 }
 
 .slide-4 {
-  background-image: url('/img/4.jpg');
+  background-image: url('./img/4.jpg');
 }
 
 .slide-5 {
-  background-image: url('/img/5.jpg');
+  background-image: url('./img/5.jpg');
 }
 
 .slide-6 {
-  background-image: url('/img/6.jpg');
+  background-image: url('./img/6.jpg');
 }
 
 .slide-7 {
-  background-image: url('/img/7.jpg');
+  background-image: url('./img/7.jpg');
 }
 
 .slide.active {
