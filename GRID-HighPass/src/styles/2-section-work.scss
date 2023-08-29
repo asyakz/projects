@@ -1,0 +1,103 @@
+@import '_common.scss';
+@import '_fonts.scss';
+
+.work {
+
+    background-color: transparent;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 14px 300px 257px;
+
+  &__item img {
+    object-fit: cover;
+  }
+  
+  &__item-1 {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  
+  &__item-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  &__item-2 h2 {
+    font-family: 'TT Firs Neue';
+    font-weight: bold;
+  }
+  
+  &__item-3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  &__item-4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  
+  &__item-5 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  
+  &__img {
+    object-fit: cover;
+  }
+  
+  &__photo-label {
+    margin-right: 15px;
+    margin-top: 15px;
+    background-color: $black-color;
+  }
+
+  &__photo-label span {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $white-color;
+  }
+  
+  &__title {
+    position: absolute;
+    bottom: 0;
+    padding: 60px;
+    left: 0;
+    width: 550px;
+    color: $white-color;
+  }
+  
+  &__title h3 {
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  &__title span {
+    display: block;
+    font-family: 'TT Firs Neue';
+    font-weight: 700;
+    line-height: 37.44px;
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+}
+

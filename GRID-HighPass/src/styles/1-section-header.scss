@@ -1,0 +1,74 @@
+@import '_common.scss';
+@import '_fonts.scss';
+
+.header {
+  display: grid;
+  height: 80px;
+  grid-template-columns: .97fr 3fr .09fr;
+  grid-gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  &__search {
+    justify-self: end;
+  }
+
+  &__search button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__search button svg path {
+    transition: fill 0.4s ease-in-out;
+  }
+
+  &__search button:hover svg path {
+    fill: $orange-color;
+  }
+
+  &__search button:active svg path {
+    fill: $dark-orange-color;
+  }
+
+  &__search button:focus {
+    outline: none;
+  }
+
+  &__search button:focus-visible svg path {
+    fill: $copper-color;
+  }
+
+  &__list {
+    display: grid;
+    font-family: 'TT Firs Neue';
+    font-weight: 400;
+    grid-template-columns: .9fr 1.1fr .85fr 1.25fr 1.5fr;
+    grid-gap: 10px;
+    color: $white-color;
+  }
+
+  &__item a {
+    padding: 5px;
+    color: $white-color;
+    transition: color 0.4s ease-in-out,
+                background-color 0.4s ease-in-out;
+  }
+
+  &__item a:hover {
+    background-color: transparent;
+    color: $orange-color;
+  }
+
+  &__item a:active {
+    background-color: $dark-orange-color;
+    color: $white-color;
+  }
+
+  &__item a:focus-visible {
+    outline: none;
+    background-color: transparent;
+    color: $copper-color;
+  }
+}

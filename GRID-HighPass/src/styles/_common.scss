@@ -1,0 +1,178 @@
+$purple-color: purple;
+$black-color: #202020;
+$white-color: #ffffff;
+$orange-color: #FF6E30;
+$dark-orange-color: #BC572B;
+$copper-color: #CE4307;
+$light-gray-color: #CACACA;
+$gray-color: #4A4A4A;
+$date-color: #999999;
+$input-color: #E9E9E9;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: $purple-color;
+}
+
+.black {
+  background-color: $black-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, span, h1, h2, h3 {
+  margin: 0;
+}
+
+html {
+  font-family: 'TT Firs Neue', 'Roboto', 'Open Sans', sans-serif, Inter, system-ui, Avenir, Helvetica,
+    Arial;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  width: 1290px;
+}
+
+.container {
+  margin-bottom: 68px;
+}
+
+.btn {
+  cursor: pointer;
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 19px;
+  padding-right: 19px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px; 
+  border: 3px solid $orange-color;
+  color: $white-color;
+  background-color: $orange-color;
+  transition: background-color 0.4s ease-in-out,
+              border-color 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: $dark-orange-color;
+  border-color: $dark-orange-color;
+}
+
+.btn:active {
+  background-color: $orange-color;
+  border-color: $copper-color;
+}
+
+.btn:focus-visible {
+  outline: none;
+  background-color: $copper-color;
+  border-color: $copper-color;
+}
+
+.caption {
+  font-family: TT Firs Neue;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.photo-label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: $black-color;
+}
+
+.photo-label span {
+  display: block;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $white-color;
+}
+
+.title {
+  font-family: 'TT Firs Neue';
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.btn-close svg circle {
+  transition: fill 0.4s ease-in-out;
+}
+
+.btn-close:hover svg circle {
+  cursor: pointer;
+  fill: $orange-color;
+}
+
+.btn-close:active svg circle {
+  fill: $dark-orange-color;
+}
+
+.btn-close:focus-visible {
+  outline: none;
+}
+
+.btn-close:focus-visible svg circle {
+  fill: $copper-color;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: $light-gray-color;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: $light-gray-color;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: $light-gray-color;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: $light-gray-color;
+}
+
+::-webkit-input-placeholder:hover {
+  color: $orange-color;
+}
+:-moz-placeholder:hover {
+  color: $orange-color;
+}
+::-moz-placeholder:hover {
+  color: $orange-color;
+}
+:-ms-input-placeholder:hover {
+  color: $orange-color;
+}

@@ -1,0 +1,121 @@
+@import '_common.scss';
+@import '_fonts.scss';
+
+.contacts {
+
+  width: 1290px;
+
+  &__caption {
+    margin-bottom: 12px;
+  }
+
+  &__content {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 470px);
+
+    &__text-container {
+      position: relative;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      color: $white-color;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      opacity: 80%;
+      background-color: $black-color;
+    }
+
+    &__text {
+      margin-top: 16px;
+      margin-left: 10px;
+    }
+
+    &__text p {
+      width: 300px;
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      color: $light-gray-color;
+    }
+
+    &__text span {
+      font-family: 'TT Firs Neue';
+      font-size: 16px;
+      font-weight: 400;
+      color: $orange-color;
+    }
+
+    &__text span img {
+      margin-bottom: -5px;
+    }
+    
+    &__map {
+      margin-top: 10px;
+      opacity: 1;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__form p {
+      margin-bottom: 14px;
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: $date-color;
+    }
+  }
+
+  &__btn-close {
+    cursor: pointer;
+    position: absolute;
+    margin-right: 13px;
+    margin-top: 18px;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__form {
+
+    &__input {
+      padding-left: 22px;
+      padding-right: 22px;
+      width: 100%;
+      height: 50px;
+      border: none;
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: 400;
+      background-color: $input-color;
+      margin-bottom: 20px;
+
+    }
+  }
+
+  &__form textarea {
+    padding-top: 12px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}

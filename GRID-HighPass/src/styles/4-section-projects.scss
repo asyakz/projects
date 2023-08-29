@@ -1,0 +1,148 @@
+@import '_common.scss';
+@import '_fonts.scss';
+
+.projects {
+
+  width: 1290px;
+
+  &__caption {
+    margin-bottom: 12px;
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 300px);
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item p {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 13px;
+  }
+
+  &__item img {
+    object-fit: cover;
+  }
+
+  &__item-img {
+    margin-bottom: 10px;
+  }
+
+  &__item-3 &__item-img {
+    max-width: 190px;
+    height: 184px;
+  }
+
+  &__item-4 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  &__item-5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  &__photo-label {
+    margin-right: 7px;
+    margin-top: 7px;
+  }
+
+  &__photo-label span {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  &__date img {
+    margin-bottom: -2px;
+  }
+
+  &__date {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    color: $date-color;
+  }
+
+  &__date-white {
+    display: block;
+    color: $white-color;
+    margin-bottom: 5px;
+  }
+
+  &__descr-container {
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 30px;
+    width: 320px;
+    top: 0;
+    left: 0;
+    color: $white-color;
+  }
+
+  &__btn-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__descr-container h3 {
+    font-family: 'TT Firs Neue';
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__btn {
+    cursor: pointer;
+    display: block;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    border: 3px solid $orange-color;
+    color: $white-color;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out,
+                border-color 0.4s ease-in-out;
+  }
+
+  &__btn:hover {
+    background-color: $orange-color;
+    border-color: $orange-color;
+  }
+  
+  &__btn:active {
+    background-color: $dark-orange-color;
+    border-color: $orange-color;
+  }
+  
+  &__btn:focus-visible {
+    outline: none;
+    background-color: $copper-color;
+    border-color: $copper-color;
+  }
+
+  &__photo-label-fuji {
+    margin-right: 40px;
+  }
+
+}

@@ -1,0 +1,68 @@
+@import '_common.scss';
+@import '_fonts.scss';
+
+.footer-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 46px);
+  color: $light-gray-color;
+
+  &__logo span {
+    display: block;
+    font-size: 14px;
+  }
+
+  &__social {
+    justify-self: end;
+  }
+
+  &__social span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__social ul {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 30px;
+  }
+
+  &__social ul li {
+    justify-self: center;
+  }
+
+  &__social ul li:first-child {
+    padding-left: 40px;
+  }
+
+  &__social ul li:last-child {
+    padding-right: 30px;
+  }
+
+  &__social ul li a svg path {
+    transition: fill 0.4s ease-in-out;
+  }
+
+  &__social ul li a:hover svg path {
+    fill: $orange-color;
+  }
+
+  &__social ul li a:active svg path {
+    fill: $dark-orange-color;
+  }
+
+  &__social ul li a:focus-visible {
+    outline: none;
+  }
+
+  &__social ul li a:focus-visible svg path {
+    outline: none;
+    fill: $copper-color;
+  }
+}
+
