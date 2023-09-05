@@ -5,17 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./images/svg/favicon.svg" type="image/svg+xml">
-  <title>Document</title>
+  <title>Фотостудия High Pass</title>
   <link rel="stylesheet" href="main.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API-ключ&lang=ru_RU"></script>
 </head>
 <body>
-  <div class="grid-container black">
+  <h1 style="display: none;">Фотостудия High Pass</h1>
+  <div class="grid-container header-container black">
     <header class="header grid">
       <div class="header__logo">
         <img src="./images/logo.png" alt="Логотип">
       </div>
+      
       <ul class="header__list">
+        <button class="header__btn-menu">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="20" height="2" fill="white"/>
+            <rect y="8" width="20" height="2" fill="white"/>
+            <rect y="16" width="10" height="2" fill="white"/>
+            </svg>
+        </button>
         <li class="header__item">
           <a href="">О студии</a></li>
         <li class="header__item">
@@ -31,6 +40,7 @@
           <a href="">Контакты</a>
         </li>
       </ul>
+    
       <div class="header__search">
         <button>
           <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +50,9 @@
       </div>
     </header>
   </div>
+
   <main>
+
     <div class="grid-container container">
       <section class="work grid">
         <div class="work__item work__item-1">
@@ -68,69 +80,81 @@
         </div>
       </section>
     </div>
+
     <div class="grid-container black container">
-      <section class="about-us grid">
-        <div class="about-us__left-container">
-          <h2 class="caption">О студии</h2>
-          <p>
-            В рамках спецификации современных стандартов, интерактивные прототипы, инициированные исключительно синтетически, ограничены исключительно образом мышления. Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада требует от нас анализа соответствующих условий активизации! Следует отметить, что семантический разбор внешних противодействий фиксирует необходимость распределения внутренних резервов и ресурсов. Безусловно, граница обучения кадров предоставляет широкие возможности для первоочередных требований. Повседневная практика показывает, что глубокий уровень погружения предполагает независимые способы реализации новых принципов формирования материально-технической и кадровой базы. Приятно, граждане, наблюдать, как явные признаки институционализации являются только методом политического участия и нарушающими общечеловеческие нормы этики.
-          </p>
-        </div>
-        <div class="about-us__right-container">
-          <img src="./images/about-us.jpg" alt="">
-          <form>
-            <label class="title" for="subscribe">Подписаться на рассылку</label>
-            <div class="about-us__input-container">
-              <input id="subscribe" type="email" placeholder="Email" aria-label="Поле ввода">
-              <button type="submit" class="btn">Отправить</button>
-            </div>
-          </form>
+      <section class="about-us">
+        <h2 class="about-us__caption caption">О студии</h2>
+        <div class="about-us__grid">
+          <div class="about-us__left-container">
+            <p>
+              В рамках спецификации современных стандартов, интерактивные прототипы, инициированные исключительно синтетически, ограничены исключительно образом мышления. Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада требует от нас анализа соответствующих условий активизации! Следует отметить, что семантический разбор внешних противодействий фиксирует необходимость распределения внутренних резервов и ресурсов. Безусловно, граница обучения кадров предоставляет широкие возможности для первоочередных требований. Повседневная практика показывает, что глубокий уровень погружения предполагает независимые способы реализации новых принципов формирования материально-технической и кадровой базы. Приятно, граждане, наблюдать, как явные признаки институционализации являются только методом политического участия и нарушающими общечеловеческие нормы этики.
+            </p>
+          </div>
+          <div class="about-us__right-container-img">
+            <img src="./images/about-us.jpg" alt="">
+          </div>
+          <div class="about-us__right-container-form">
+            <form>
+              <label class="title" for="subscribe">Подписаться на рассылку</label>
+              <div class="about-us__input-container">
+                <input id="subscribe" type="email" placeholder="Email" aria-label="Поле ввода">
+                <button type="submit" class="about-us__btn btn">Отправить</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </div>
+
     <div class="grid-container container">
       <section class="projects">
         <h2 class="projects__caption caption">Наши проекты</h2>
-        <div class="projects__list">
+        <div class="projects__grid">
 
           <div class="projects__item projects__item-1">
-            <img class="projects__item-img" src="./images/project-1.jpg" alt="Фотография">
+            <img class="projects__item-img projects__item-photo" src="./images/project-1.jpg" alt="Фотография">
+            <div class="projects__photo-label photo-label">
+              <span>#пейзаж</span>
+            </div>
+          </div>
+          <div class="projects__item projects__item-1-text">
             <p>Синтетически, смешаны с не уникальными данными до степени…</p>
             <span class="projects__date">
               <img src="./images/svg/calendar_today.svg" alt="">
               16 июня
             </span>
-            <div class="projects__photo-label photo-label">
-              <span>#пейзаж</span>
-            </div>
           </div>
 
           <div class="projects__item projects__item-2">
-            <img class="projects__item-img" src="./images/project-2.jpg" alt="Фотография">
+            <img class="projects__item-img projects__item-photo" src="./images/project-2.jpg" alt="Фотография">
+            <div class="projects__photo-label photo-label">
+              <span>#портрет</span>
+            </div>
+          </div>
+          <div class="projects__item projects__item-2-text">
             <p>В своём стремлении улучшить опыт мы упускаем, что явные...</p>
             <span class="projects__date">
               <img src="./images/svg/calendar_today.svg" alt="">
               28 мая
             </span>
-            <div class="projects__photo-label photo-label">
-              <span>#портрет</span>
-            </div>
           </div>
 
           <div class="projects__item projects__item-3">
-            <img class="projects__item-img" src="./images/project-3.jpg" alt="Фотография">
-            <p>Равным образом, высокое качество позиционных…</p>
-            <span class="projects__date">
-              <img src="./images/svg/calendar_today.svg" alt="">
-              14 мая
-            </span>
+            <img class="projects__item-img projects__item-photo" src="./images/project-3.jpg" alt="Фотография">
             <div class="projects__photo-label photo-label">
               <span>#предмет</span>
             </div>
           </div>
+          <div class="projects__item projects__item-3-text">
+            <p>Равным образом, высокое качество позиционных высокотехнологичная концепция общественного уклада...</p>
+            <span class="projects__date">
+              <img src="./images/svg/calendar_today.svg" alt="">
+              14 мая
+            </span>
+          </div>
 
           <div class="projects__item projects__item-4">
-            <img src="./images/project-4.jpg" alt="Фотография">
+            <img class="projects__item-photo" src="./images/project-4.jpg" alt="Фотография">
             <div class="projects__descr-container">
                 <span class="projects__date projects__date-white">
                   <img src="./images/svg/calendar_today_white.svg" alt="">
@@ -148,7 +172,7 @@
           </div>
 
           <div class="projects__item projects__item-5">
-            <img src="./images/project-5.jpg" alt="Фотография">
+            <img class="projects__item-photo" src="./images/project-5.jpg" alt="Фотография">
             <div class="projects__descr-container">
                 <span class="projects__date projects__date-white">
                   <img src="./images/svg/calendar_today_white.svg" alt="">
@@ -166,31 +190,37 @@
           </div>
 
           <div class="projects__item projects__item-6">
-            <img class="projects__item-img" src="./images/project-6.jpg" alt="Фотография">
+            <img class="projects__item-img projects__item-photo" src="./images/project-6.jpg" alt="Фотография">
+            <div class="projects__photo-label photo-label">
+              <span>#ретушь</span>
+            </div>
+          </div>
+          <div class="projects__item projects__item-6-text">
             <p>Как принято считать, многие известные личности и по сей день остаются уделом либералов…</p>
             <span class="projects__date">
               <img src="./images/svg/calendar_today.svg" alt="">
               14 мая
             </span>
-            <div class="projects__photo-label photo-label">
-              <span>#ретушь</span>
-            </div>
           </div>
 
           <div class="projects__item projects__item-7">
-            <img class="projects__item-img" src="./images/project-7.jpg" alt="Фотография">
+            <img class="projects__item-img projects__item-photo" src="./images/project-7.jpg" alt="Фотография">
+            <div class="projects__photo-label photo-label">
+              <span>#портрет</span>
+            </div>
+          </div>
+          <div class="projects__item projects__item-7-text">
             <p>С учётом сложившейся международной обстановки, новая модель организационной…   </p>
             <span class="projects__date">
               <img src="./images/svg/calendar_today.svg" alt="">
               14 мая
             </span>
-            <div class="projects__photo-label photo-label">
-              <span>#портрет</span>
-            </div>
+            
           </div>
         </div>
       </section>
     </div>
+
     <div class="grid-container container">
       <section class="contacts">
         <h2 class="caption contacts__caption">Контакты </h2>
@@ -199,11 +229,13 @@
           <div class="contacts__content__text-container">
             <div class="contacts__content__text">
               <h3 class="title">Студия «High pass»</h3>
-              <p>107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис № 82</p>
-              <span>
-                <img src="./images/svg/phone.svg" alt="">
-                +7 495 424-23-532
-              </span>
+              <p>
+                107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис № 82
+                <span>
+                  <img src="./images/svg/phone.svg" alt="">
+                  +7 495 424-23-532
+                </span>
+              </p>
             </div>
             <button class="contacts__btn-close"><img src="./images/svg/close.svg" alt=""></button>
           </div>
@@ -225,7 +257,9 @@
         </div>
       </section>
     </div>
+  
   </main>
+
   <div class="grid-container black footer-container">
     <footer class="footer grid">
       <div class="footer__logo">

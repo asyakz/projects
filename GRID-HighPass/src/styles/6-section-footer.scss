@@ -2,18 +2,24 @@
 @import '_fonts.scss';
 
 .footer-container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .footer {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 46px);
+  align-items: center;
+  grid-template-columns: 1fr 5fr 2fr;
+  grid-template-rows: 1, 46px;
   color: $light-gray-color;
 
   &__logo span {
     display: block;
     font-size: 14px;
+    white-space: nowrap;
+  }
+
+  &__text {
+    justify-self: center;
   }
 
   &__social {
@@ -23,6 +29,7 @@
   &__social span {
     display: block;
     margin-bottom: 5px;
+    white-space: nowrap;
   }
 
   &__social ul {

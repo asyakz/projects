@@ -54,13 +54,12 @@ body {
   display: grid;
   justify-content: center;
   max-width: 100%;
-  margin-bottom: 40px;
 }
 
 .grid {
   display: grid;
   grid-gap: 30px;
-  width: 1290px;
+  max-width: 1290px;
 }
 
 .container {
@@ -104,6 +103,7 @@ body {
   font-family: TT Firs Neue;
   font-size: 24px;
   font-weight: 700;
+  max-width: 100%;
 }
 
 .photo-label {

@@ -1,0 +1,865 @@
+@import '_common.scss';
+@import '_fonts.scss';
+
+// *** 1350 ***
+
+@media (max-width: 1350px) {
+
+  .grid-container {
+    max-width: 1350px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+// *** HEADER ***
+
+.header {
+
+  grid-template-columns: 1fr 11fr 1fr;
+
+  &__list {
+    grid-gap: 0px;
+  }
+
+  &__logo {
+    padding-right: 10px;
+  }
+
+  &__logo {
+    padding-right: 10px;
+  }
+
+  &__logo img {
+    width: 166px;
+    height: auto;
+  }
+}
+
+// *** WORK ***
+
+.work {
+  grid-template-rows: 50px 332px 186px;
+
+  &__item-2 h2 {
+    max-width: 432px;
+  }
+}
+
+// *** ABOUT US ***
+
+.about-us {
+
+  &__right-container-form input {
+    max-width: 334px;
+  }
+
+  &__right-container-form button {
+    max-width: 126px;
+  }
+
+  &__input-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 50px);
+    gap: 20px;
+  }
+
+}
+
+// *** PROJECTS ***
+
+
+// *** CONTACTS ***
+
+.contacts {
+
+  &__form textarea {
+    height: 147px;
+  }
+}
+
+// *** FOOTER ***
+
+}
+
+@media (max-width: 1035px) {
+  .contacts {
+    &__form textarea {
+      height: 127px;
+    }
+  }
+}
+
+// *** 1024 ***
+
+@media (max-width: 1024px) {
+
+  .grid {
+    max-width: 963px;
+  }
+
+// *** HEADER ***
+
+.header-container {
+  margin-bottom: 35px;
+}
+
+.header {
+
+  grid-template-columns: 1fr 11fr 1fr;
+
+  &__list {
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    justify-items: fit-content;
+  }
+}
+
+// *** WORK ***
+
+  .work {
+  
+    grid-template-rows: 45px 332px 186px;
+
+    &__title {
+      padding: 30px;
+    }
+
+    &__title h3 {
+      margin-bottom: 3px;
+    }
+
+    &__title span {
+      font-size: 34px;
+      line-height: 34px;
+      margin-bottom: 25px;
+    }
+
+  }
+
+// *** ABOUT US ***
+
+  .about-us {
+
+    padding-bottom: 83px;
+
+    &__grid {
+      grid-template-rows: 332px;
+      grid-gap: 15px 30px;
+    }
+
+    &__right-container-form {
+      align-self: end;
+    }
+
+    &__right-container-img img {
+      min-height: 332px;
+    }
+  }
+
+// *** PROJECTS ***
+
+  .projects {
+
+    max-width: 963px;
+
+    &__grid {
+      display: grid;
+      grid-gap: 20px 30px;
+      grid-template-columns: 1fr 1fr 3fr 3fr 1fr 1fr 1fr 1fr 3fr 3fr 1fr 1fr;
+      grid-template-rows: 184px 85px 184px 103px 184px 107px;
+    }
+
+    &__descr-container {
+      padding-top: 35px;
+    }
+
+    &__item-1-text p,
+    &__item-2-text p,
+    &__item-3-text p {
+      max-height: 44px;
+      -webkit-line-clamp: 2;
+    }
+
+    &__item-1 {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+    }
+
+    &__item-1-text {
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+    }
+
+    &__item-2 {
+      grid-column: 4 / 7;
+      grid-row: 1 / 2;
+    }
+  
+    &__item-2-text {
+      grid-column: 4 / 7;
+      grid-row: 2 / 3;
+    }
+
+    &__item-3 {
+      grid-column: 7 / 13;
+      grid-row: 1 / 2;
+    }
+  
+    &__item-3-text {
+      grid-column: 7 / 13;
+      grid-row: 2 / 3;
+    }
+
+    &__item-4 {
+      grid-column: 1 / 9;
+      grid-row: 3 / 5;
+    }
+
+    &__item-5 {
+      grid-column: 5 / 13;
+      grid-row: 5 / 7;
+      margin-top: 5px;
+    }
+
+    &__item-6 {
+      grid-column: 9 / 13;
+      grid-row: 3 / 4;
+      margin-top: 0px;
+    }
+  
+    &__item-6-text {
+      grid-column: 9 / 13;
+      grid-row: 4 / 5;
+    }
+  
+    &__item-7 {
+      grid-column: 1 / 5;
+      grid-row: 5 / 6;
+      margin-top: 5px;
+    }
+  
+    &__item-7-text {
+      grid-column: 1 / 5;
+      grid-row: 6 / 7;
+    }
+  }
+
+// *** CONTACTS ***
+
+  .contacts {
+    max-width: 963px;
+
+    &__form textarea {
+      padding-top: 12px;
+      height: 148px;
+      margin-bottom: 15px;
+    }
+
+    &__content {
+
+      grid-template-columns: 1fr 1fr 1.2fr;
+      grid-template-rows: 151px 152px 167px;
+      grid-gap: 0px 30px;
+
+      &__text-container {
+        align-items: start;
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+      }
+
+      &__text {
+        max-height: 111px;
+        margin-left: 30px;
+        margin-top: 15px;
+      }
+
+      &__text p {
+        max-width: 301px;
+      }
+
+      &__text span {
+        margin-left: 10px;
+        white-space: wrap;
+        display: inline;
+      }
+
+      &__text span img {
+        display: inline;
+      }
+
+      &__map {
+        grid-column: 1 / 3;
+        grid-row: 1 / 4;
+      }
+
+      &__form {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+      }
+    }
+  }
+
+// *** FOOTER ***
+
+  .footer-container {
+    padding-bottom: 20px;
+  }
+
+  .footer {
+
+    grid-template-columns: 3.5fr 5fr 1fr;
+
+    &__logo img {
+      width: 166px;
+    }
+  }
+
+}
+
+// *** 932 ***
+
+@media (max-width: 932px) {
+
+  .contacts {
+    &__form textarea {
+      height: 127px;
+    }
+  }
+
+  .about-us {
+
+    &__grid {
+      grid-template-rows: 432px;
+      grid-gap: 15px 30px;
+    }
+
+    &__right-container-img img {
+      min-height: 432px;
+    }
+  }
+}
+
+// *** 825 ***
+
+@media (max-width: 825px) {
+
+  body {
+    position: relative;
+  }
+
+  .header-container {
+    margin-bottom: 80px;
+  }
+
+  .header {
+
+    grid-template-columns: 250fr 1fr;
+    grid-template-rows: 80px 45px;
+    grid-gap: 0px 30px;
+
+    &__logo {
+      justify-content: left;
+      justify-self: left;
+      justify-items: start;
+    }
+
+    &__search {
+      justify-content: right;
+      justify-self: right;
+      justify-items: end;
+      justify-content: right;
+    }
+
+    &__list {
+      position: absolute;
+      z-index: 3;
+      background-color: $gray-color;
+      grid-template-columns: .3fr 7fr 4fr 7fr 3fr;
+      width: 100vw;
+      padding-top: 12px;
+      padding-bottom: 13px;
+      padding-right: 25px;
+      padding-left: 25px;
+      justify-items: start;
+      grid-gap: 10px;
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      top: 80px;
+      left: 0;
+    }
+
+    &__item {
+      justify-self: center;
+    }
+  }
+
+  .work {
+
+    &__item-2 h2 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 23px;
+    }
+  }
+
+  .about-us {
+
+    &__grid {
+      grid-template-rows: 532px;
+      grid-gap: 15px 30px;
+    }
+
+    &__right-container-img img {
+      min-height: 532px;
+    }
+  }
+}
+
+// *** 768 ***
+
+@media (max-width: 768px) {
+
+// *** HEADER ***
+
+// *** WORK ***
+
+.work {
+
+  grid-template-rows: 32px 228px 133px;
+
+  &__title h3 {
+    margin-bottom: 10px;
+  }
+
+  &__title span {
+    font-size: 34px;
+    line-height: 31px;
+    margin-bottom: 25px;
+  }
+}
+
+// *** ABOUT US ***
+
+  .about-us {
+
+    &__grid {
+      grid-template-rows: 569px;
+      grid-gap: 15px 30px;
+    }
+  
+    padding-bottom: 62px;
+
+    &__grid {
+      gap: 20px 30px;
+    }
+
+    &__right-container-img {
+      margin-bottom: 0px;
+    }
+
+    &__right-container-img img {
+      min-height: 569px;
+    }
+
+    &__right-container-form {
+      align-self: start;
+    }
+  }
+
+// *** PROJECTS ***
+
+.projects {
+
+  &__grid {
+    display: grid;
+    grid-gap: 20px 30px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 184px 93px 310px 184px 93px 320px;
+  }
+
+  &__item-1-text p,
+  &__item-2-text p,
+  &__item-3-text p {
+    max-height: 63px;
+    -webkit-line-clamp: 3;
+  }
+
+  &__item-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  &__item-1-text {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  &__item-2 {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+  }
+
+  &__item-2-text {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+  }
+
+  &__item-3 {
+    grid-column: 5 / 7;
+    grid-row: 1 / 2;
+  }
+
+  &__item-3-text {
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+  }
+
+  &__item-4 {
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+    margin-top: 10px;
+  }
+
+  &__item-5 {
+    grid-column: 1 / 7;
+    grid-row: 6 / 7;
+    margin-top: 20px;
+  }
+
+  &__item-6 {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    margin-top: 10px;
+  }
+
+  &__item-6-text {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+  }
+
+  &__item-7 {
+    grid-column: 4 / 7;
+    grid-row: 4 / 5;
+    margin-top: 10px;
+  }
+
+  &__item-7-text {
+    grid-column: 4 / 7;
+    grid-row: 5 / 6;
+  }
+}
+
+// *** CONTACTS ***
+
+  .contacts {
+
+    &__content {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 283px 170px 445px;
+      grid-gap: 20px;
+
+      &__text-container {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+      }
+
+      &__text p {
+        max-width: 360px;
+      }
+
+      &__text span {
+        margin-left: 0px;
+      }
+
+      &__map {
+        width: 100%;
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+      }
+
+      &__form {
+        width: 466px;
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+      }
+
+      &__form textarea {
+        height: 150px;
+      }
+    }
+
+    .ymaps-2-1-79-map {
+      width: 100%;
+    }
+  }
+
+// *** FOOTER ***
+
+  .footer {
+
+    grid-template-columns: repeat(3, 1fr);
+
+    &__text p {
+      display: none;
+    }
+
+    &__logo {
+      justify-self: left;
+      justify-content: left;
+      justify-items: left;
+    }
+
+    &__social {
+      justify-self: right;
+      justify-content: right;
+      justify-items: right;
+    }
+  }
+
+}
+
+@media (max-width: 765px) {
+  
+  .work {
+    grid-template-rows: 60px 228px 133px;
+  }
+
+  .about-us {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+
+    .about-us {
+      &__right-container-img img {
+        min-height: 278px;
+      }
+    }
+
+    &__left-container {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
+
+    &__right-container-img {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+    }
+
+    &__right-container-form {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+    }
+  }
+
+  .projects {
+
+    &__grid {
+      grid-gap: 20px 30px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 184px ;
+    }
+  
+    &__item-1-text p {
+      max-height: 66px;
+      -webkit-line-clamp: 3;
+    }
+
+    &__item-2-text p,
+    &__item-3-text p {
+      max-height: 44px;
+      -webkit-line-clamp: 2;
+    }
+  
+    &__item-1 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  
+    &__item-1-text {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+  
+    &__item-2 {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+  
+    &__item-2-text {
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+    }
+  
+    &__item-3 {
+      grid-column: 1 / 2;
+      grid-row: 5 / 6;
+    }
+  
+    &__item-3-text {
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+    }
+  
+    &__item-4 {
+      grid-column: 1 / 2;
+      grid-row: 7 / 8;
+      margin-top: 10px;
+    }
+  
+    &__item-5 {
+      grid-column: 1 / 2;
+      grid-row: 8 / 9;
+      margin-top: 20px;
+    }
+  
+    &__item-6 {
+      grid-column: 1 / 2;
+      grid-row: 9 / 10;
+      margin-top: 10px;
+    }
+  
+    &__item-6-text {
+      grid-column: 1 / 2;
+      grid-row: 10 / 11;
+    }
+  
+    &__item-7 {
+      grid-column: 1 / 2;
+      grid-row: 11 / 12;
+      margin-top: 10px;
+    }
+  
+    &__item-7-text {
+      grid-column: 1 / 2;
+      grid-row: 12 / 13;
+    }
+  }
+}
+
+
+@media (max-width: 565px) {
+
+  .header {
+
+    &__btn-menu {
+      cursor: pointer;
+      display: block;
+      border: none;
+      background-color: transparent;
+    }
+
+    &__btn-menu svg rect {
+      transition: fill 0.4s ease-in-out;
+    }
+
+    &__btn-menu:hover svg rect {
+      fill: $orange-color;
+    }
+
+    &__btn-menu:active svg rect {
+      fill: $dark-orange-color;
+    }
+
+    &__btn-menu:focus-visible svg rect {
+      fill: $copper-color;
+    }
+
+    &__item {
+      display: none;
+    }
+  }
+
+  .work {
+    min-width: 90vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 422px 38px 186px 105px;
+
+    &__item {
+      width: 100%;
+    }
+
+    &__item-1 {
+      position: relative;
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
+    
+    &__item-2 {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+    }
+    
+    &__item-3 {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+    }
+    
+    &__item-4 {
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+    }
+    
+    &__item-5 {
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+    }
+  }
+
+  .contacts {
+
+    &__content {
+
+      &__form {
+        width: auto;
+        grid-column: 1 / 4;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+
+// *** 400 ***
+
+// *** HEADER ***
+
+  .header {
+    &__logo img {
+      width: 111.55px;
+    }
+  
+    &__search button svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+// *** WORK ***
+
+.work {
+  &__item-2 h2 {
+    font-size: 18px;
+    line-height: 19px;
+  }
+}
+
+// *** ABOUT US ***
+
+// *** PROJECTS ***
+
+// *** CONTACTS ***
+
+// *** FOOTER ***
+
+}
+
+@media (max-width: 319px) {
+    body {
+      display: none;
+    } 
+  }

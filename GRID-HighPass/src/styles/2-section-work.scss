@@ -3,27 +3,23 @@
 
 .work {
 
-    background-color: transparent;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 14px 300px 257px;
+  background-color: transparent;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 13px 300px 257px;
 
-  &__item img {
-    object-fit: cover;
+  &__caption {
+    line-height: 24.96px;
   }
-  
+
   &__item-1 {
     position: relative;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
   }
   
   &__item-2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
   }
   
   &__item-2 h2 {
@@ -32,28 +28,24 @@
   }
   
   &__item-3 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
   }
   
   &__item-4 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
   }
   
   &__item-5 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
   }
   
   &__img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
   
   &__photo-label {
@@ -80,7 +72,7 @@
     bottom: 0;
     padding: 60px;
     left: 0;
-    width: 550px;
+    max-width: 550px;
     color: $white-color;
   }
   
