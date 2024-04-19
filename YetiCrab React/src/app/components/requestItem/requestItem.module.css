@@ -1,0 +1,16 @@
+
+.reqList {
+  min-width: 850px;
+  margin-bottom: 10px;
+}
+
+.reqItem {
+  text-align: left;
+  color: white;
+}
+
+.item {
+  border: 1px solid white;
+  min-width: 500px;
+  list-style: none;
+}

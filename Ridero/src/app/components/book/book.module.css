@@ -1,0 +1,41 @@
+.btnChange {
+  background-color: green;
+}
+
+.btnDelete {
+  background-color: red;
+}
+
+.btnSave {
+  background-color: blue;
+}
+
+.btnAdd {
+  background-color: rgb(13, 142, 103);
+}
+
+.btn {
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 50px;
+}
+
+.bookTitle {
+  min-width: 500px;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: start;
+}
+
+.item {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgCover {
+  margin-right: 20px;
+  width: 145px;
+  height: 205px;
+  background-color: white;
+}
